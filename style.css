@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: lighter;
+  line-height: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: darkgrey;
+  position: fixed;
+  top: 0px;
+  background-color: #0f092c;
+  width: 100%;
+  height: 4rem;
+  padding: 0 5rem;
+  opacity: 0.8;
+}
+
+nav a:hover {
+  border-bottom: 2px green solid;
+}
+
+nav a {
+  height: 100%;
+  padding: 1rem;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1.5rem;
+}
+
+nav ul li a {
+  color: darkgrey;
+}
+
+nav h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+#showcase {
+  background: no-repeat center center/cover url("./img/marvels-spider-man.jpeg");
+  height: 100vh;
+  position: relative;
+}
+
+#showcase:before {
+  content: "";
+  opacity: 0.5;
+  z-index: 0;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#showcase * {
+  z-index: 1;
+}
+
+#showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+
+#showcase-content h1 {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: grey;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.container {
+  /*  For the purpose of keeping everything boxed in */
+  width: 80%;
+  margin: auto;
+}
+
+#about h1 {
+  text-align: center;
+  padding: 5rem 0;
+  color: #ffffff;
+}
+
+#aboutFlex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about p {
+  text-align: center;
+}
+
+#about #flexcontent1 {
+  background-color: rgb(158, 154, 154);
+  padding: 7.1rem 2rem;
+}
+
+#about #flexcontent2 {
+  background-color: rgb(9, 7, 70);
+  padding: 5.5rem 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.parralax {
+  background-image: url(./img/kombat-pack2.jpg);
+  background-attachment: fixed;
+}
+
+#games h1 {
+  text-align: center;
+  padding: 5rem 0;
+  color: #ffffff;
+}
+
+#maingrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 70vh;
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+}
+
+
+.card a {
+  color: whitesmoke;
+}
+#mw3 {
+  background: no-repeat center center/cover url("./img/MW3.jpg");
+  object-fit: contain;
+  border: 2px solid #000; 
+  margin: 10px;
+}
+#sm2 {
+  background: no-repeat center center/cover url("./img/spiderman\ 2\ game.jpeg");
+  object-fit: contain;
+  border: 2px solid #000; 
+  margin: 10px;
+}
+#FC {
+  background: no-repeat center center/cover url("./img/fc\ 24\ logo.jpeg");
+  object-fit: contain;
+  border: 2px solid #000;
+  margin: 10px;
+}
+#UFC {
+  background: no-repeat center center/cover url("./img/UFC5-2.jpeg");
+  object-fit: contain;
+  border: 2px solid #000; 
+  margin: 10px;
+}
+#Warhammer {
+  background: no-repeat center center/cover
+    url("./img/Warhammer.jpg");
+  object-fit: contain;
+  border: 2px solid #000; 
+  margin: 10px;
+}
+#MortalKombat {
+  background: no-repeat center center/cover url("./img/MortalKombat.jpg");
+  object-fit: contain;
+  border: 2px solid #000; 
+  margin: 10px;
+  
+  
+}
+#Zelda {
+  background: no-repeat center center/cover url("./img/breath\ of\ the\ wild.jpeg");
+  object-fit: contain;
+  border: 2px solid #000; 
+  margin: 10px;
+}
+
+
+#ering{
+  background: no-repeat center center/cover url("./img/Elden_Ring2.jpg");
+  object-fit: contain;
+  border: 2px solid #000; 
+  margin: 10px;
+}
+#ragnarok{
+  background: no-repeat center center/cover url("./img/gowr-key-art.jpg");
+  object-fit: contain;
+  border: 2px solid #000; 
+  margin: 10px;
+}
+
+#reviews h1 {
+  text-align: center;
+  padding: 5rem 0;
+  color: #ffffff;
+}
+
+#testemonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.testemonial h1 {
+  color: #fff;
+}
+
+.testemonial {
+  display: flex;
+  margin: 50px;
+  padding: 30px;
+  border-radius: 3px;
+  opacity: 0.8;
+  justify-content: space-evenly;
+  text-align: center;
+  box-shadow: 10px 10px 5px #333;
+  background-color: #444;
+}
+
+.testemonial img {
+  max-width: 56%;
+  border-radius: 0%;
+}
+
+.testemonial p {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#contact h1 {
+  text-align: center;
+  padding: 5rem 0;
+  color: #ffffff;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 80%;
+  border: 1px #ddd solid;
+  padding: 10px;
+  margin-top: 15px;
+
+  box-shadow: 1.1px 1.1px 8px #333;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+#contactForm textarea {
+  height: 150px;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+#contactForm .form-group {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+#contactForm .btn {
+  margin-left: 30px;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+}
